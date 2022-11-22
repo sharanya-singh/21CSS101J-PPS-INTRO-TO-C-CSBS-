@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+printf("RA2211042010010\n");
+   int a,b, mul;      
+    a  = 5;                
+    b  = 3;
+    mul = a * b;       
+    printf("Output of %d multiplied by %d is %d", a, b, mul);
+    return(0);
+}

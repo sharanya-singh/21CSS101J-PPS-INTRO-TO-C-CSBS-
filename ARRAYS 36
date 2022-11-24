@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a[50], b[50], c[50], i, limitA, limitB, j, k=0, x, count=0;
+    printf("How many element you want to store in array A: ");
+    scanf("%d", &limitA);
+    printf("How many element you want to store in array B: ");
+    scanf("%d", &limitB);
+    printf("Enter any %d array elements for array A: ", limitA);
+    for(i=0; i<limitA; i++)
+        scanf("%d", &a[i]);
+    printf("Enter any %d array elements for array B: ", limitB);
+    for(i=0; i<limitB; i++)
+        scanf("%d", &b[i]);
+    for(i=0; i<limitA; i++)
+    {
+        for(j=0; j<limitB; j++)
+        {
+            if(a[i]==b[j])
+            {
+                count=0;
+                for(x=0; x<k; x++)
+                {
+                    if(a[i]==c[x])
+                        count++;
+                }
+                if(count==0)
+                {
+                    c[k]=a[i];
+                    k++;
+                }
+            }
+        }
+    }
+    printf("\nArray A:\n");
+    for(i=0; i<limitA; i++)
+    {
+        if(i==(limitA-1))
+            printf("%d", a[i]);
+        else
+            printf("%d, ", a[i]);
+    }
+    printf("\n\nArray B:\n");
+    for(i=0; i<limitB; i++)
+    {
+        if(i==(limitB-1))
+            printf("%d", b[i]);
+        else
+            printf("%d, ", b[i]);
+    }
+    printf("\n\nArray C:\n");
+    for(i=0; i<k; i++)
+    {
+        if(i==(k-1))
+            printf("%d", c[i]);
+        else
+            printf("%d, ", c[i]);
+    }
+    getch();
+    return 0;
+}

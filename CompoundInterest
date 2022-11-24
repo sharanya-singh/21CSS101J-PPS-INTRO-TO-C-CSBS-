@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+printf("RA2211042010010\n");
+float p, r, t, a, si, ci;
+printf("Enter Principle,Rate,Time=");
+scanf("%f%f%f",&p,&r,&t);
+si=(p*r*t)/100;
+printf("Simple Interest=%f",si);
+a = p*(pow((1 + r / 100), t));
+printf("Compound Interest=%d",ci);
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() 
+{
+printf("RA2211042010010\n");
+char ch = 'Z';
+ if(isalpha(ch))
+   printf("alphabet");     
+ else
+     printf("Numeric" );
+}

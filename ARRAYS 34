@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void insertsort(int arr[], int size);
+int main()
+{
+    int arr[50], size, i;
+    printf("How many element you want to store? ");
+    scanf("%d", &size);
+    printf("Enter any %d array elements: ", size);
+    for(i=0; i<size; i++)
+        scanf("%d", &arr[i]);
+    insertsort(arr, size);
+    printf("\nSorted Array in ascending order:\n");
+    for(i=0; i<size; i++)
+        printf("%d ", arr[i]);
+    getch();
+    return 0;
+}
+void insertsort(int arr[], int size)
+{
+    int i, elem, j;
+    for(i=1; i<size; i++)
+    {
+        elem = arr[i];
+        j = i-1;
+        while((elem<arr[j]) && (j>=0))
+        {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = elem;
+    }
+}

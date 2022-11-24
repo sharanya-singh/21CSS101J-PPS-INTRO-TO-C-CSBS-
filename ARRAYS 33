@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int arr[5], i, j, elem;
+    printf("Enter any 5 array elements: ");
+    for(i=0; i<5; i++)
+        scanf("%d", &arr[i]);
+    for(i=1; i<5; i++)
+    {
+        elem = arr[i];
+        j = i-1;
+        while((elem<arr[j]) && (j>=0))
+        {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = elem;
+    }
+    printf("\nSorted Array in ascending order:\n");
+    for(i=0; i<5; i++)
+        printf("%d ", arr[i]);
+    getch();
+    return 0;
+}

@@ -1,0 +1,14 @@
+//if macro is defined by #define If yes, it executes the code otherwise #else code is executed, if present//
+#include <stdio.h>  
+#define NOINPUT  
+void main() { 
+printf("RA2211042010010\n");
+int a=0;  
+#ifdef NOINPUT  
+a=2;  
+#else  
+printf("Enter a:");  
+scanf("%d", &a);  
+#endif         
+printf("Value of a: %d\n", a);  
+}  

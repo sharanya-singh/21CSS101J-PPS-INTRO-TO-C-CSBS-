@@ -1,0 +1,7 @@
+//define constant or micro substitution//
+#include <stdio.h>  
+#define PI 3.14  
+main() {  
+   printf("RA2211042010010\n");
+   printf("%f",PI);  
+}  

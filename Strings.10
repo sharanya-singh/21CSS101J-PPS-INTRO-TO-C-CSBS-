@@ -1,0 +1,11 @@
+//strcmp(firstStr, secStr)//
+#include <stdio.h>
+#include <string.h>
+void printString(char arr[]);
+int countLength (char arr[]);
+int main() {
+printf("RA2211042010010\n");
+char firstStr[] = "HHA";
+char secStr[] = "HHB";
+printf("%d\n", strcmp(firstStr, secStr));
+}
